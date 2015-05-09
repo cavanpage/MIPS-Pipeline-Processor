@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\Cavan\Documents\compe475\hw4pipeline\testbench.v" Line 149: Using initial value of <arg fmt="%s" index="1">reset</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1670" delta="old" >"C:\Users\Cavan\Documents\compe475\hw4pipeline\instructionmemory.v" Line 31: Signal &lt;<arg fmt="%s" index="1">mem</arg>&gt; in initial block is partially initialized.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Cavan\Documents\compe475\hw4pipeline\instructionmemory.v" Line 37: Signal &lt;<arg fmt="%s" index="1">mem</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1401" delta="old" >"C:\Users\Cavan\Documents\compe475\hw4pipeline\clk1.v" Line 35: Signal <arg fmt="%s" index="1">InstrD[31]</arg> in unit <arg fmt="%s" index="2">clk1</arg> is connected to following multiple drivers:
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Cavan\Documents\compe475\hw4pipeline\clk1.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">clk1</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Cavan\Documents\compe475\hw4pipeline\testbench.v" Line 80: Assignment to <arg fmt="%s" index="1">jump</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="error" file="HDLCompiler" num="418" delta="old" >"C:\Users\Cavan\Documents\compe475\hw4pipeline\testbench.v" Line 99: External reference &lt;<arg fmt="%s" index="1">a1.a</arg>&gt; remains unresolved.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Cavan\Documents\compe475\hw4pipeline\testbench.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">testbench</arg>&gt; remains a black box.
+</msg>
+
+</messages>
+

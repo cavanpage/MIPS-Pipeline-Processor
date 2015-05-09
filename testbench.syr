@@ -1,0 +1,318 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: testbench.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "testbench.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "testbench"
+Output Format                      : NGC
+Target Device                      : xa7a100t-2I-csg324
+
+---- Source Options
+Top Module Name                    : testbench
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\signextend.v" into library work
+Parsing module <signextend>.
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\shiftleft.v" into library work
+Parsing module <shiftleft>.
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\registerfile.v" into library work
+Parsing module <registerfile>.
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\pcplus.v" into library work
+Parsing module <pcplus>.
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\muxtwo_one.v" into library work
+Parsing module <muxtwo_one>.
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\muxthree_one.v" into library work
+Parsing module <muxthree_one>.
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\muxregdst.v" into library work
+Parsing module <muxregdst>.
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\instructionmemory.v" into library work
+Parsing module <instructionmemory>.
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\hazardunit.v" into library work
+Parsing module <hazardunit>.
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\datamemory.v" into library work
+Parsing module <datamemory>.
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\controlunit.v" into library work
+Parsing module <controlunit>.
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\clkregen.v" into library work
+Parsing module <clkregen>.
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\clk4.v" into library work
+Parsing module <clk4>.
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\clk3.v" into library work
+Parsing module <clk3>.
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\clk2.v" into library work
+Parsing module <clk2>.
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\clk1.v" into library work
+Parsing module <clk1>.
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\aluone.v" into library work
+Parsing module <aluone>.
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\add.v" into library work
+Parsing module <add>.
+Analyzing Verilog file "C:\Users\Cavan\Documents\compe475\hw4pipeline\testbench.v" into library work
+Parsing module <testbench>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <testbench>.
+WARNING:HDLCompiler:872 - "C:\Users\Cavan\Documents\compe475\hw4pipeline\testbench.v" Line 149: Using initial value of reset since it is never assigned
+
+Elaborating module <clkregen>.
+
+Elaborating module <instructionmemory>.
+Reading initialization file \"program.dat\".
+WARNING:HDLCompiler:1670 - "C:\Users\Cavan\Documents\compe475\hw4pipeline\instructionmemory.v" Line 31: Signal <mem> in initial block is partially initialized.
+WARNING:HDLCompiler:91 - "C:\Users\Cavan\Documents\compe475\hw4pipeline\instructionmemory.v" Line 37: Signal <mem> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <pcplus>.
+
+Elaborating module <muxtwo_one>.
+
+Elaborating module <clk1>.
+ERROR:HDLCompiler:1401 - "C:\Users\Cavan\Documents\compe475\hw4pipeline\clk1.v" Line 35: Signal InstrD[31] in unit clk1 is connected to following multiple drivers:
+Driver 0: output signal InstrD[31] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[31] of instance Latch (InstrD[31]).
+Driver 0: output signal InstrD[30] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[30] of instance Latch (InstrD[30]).
+Driver 0: output signal InstrD[29] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[29] of instance Latch (InstrD[29]).
+Driver 0: output signal InstrD[28] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[28] of instance Latch (InstrD[28]).
+Driver 0: output signal InstrD[27] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[27] of instance Latch (InstrD[27]).
+Driver 0: output signal InstrD[26] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[26] of instance Latch (InstrD[26]).
+Driver 0: output signal InstrD[25] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[25] of instance Latch (InstrD[25]).
+Driver 0: output signal InstrD[24] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[24] of instance Latch (InstrD[24]).
+Driver 0: output signal InstrD[23] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[23] of instance Latch (InstrD[23]).
+Driver 0: output signal InstrD[22] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[22] of instance Latch (InstrD[22]).
+Driver 0: output signal InstrD[21] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[21] of instance Latch (InstrD[21]).
+Driver 0: output signal InstrD[20] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[20] of instance Latch (InstrD[20]).
+Driver 0: output signal InstrD[19] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[19] of instance Latch (InstrD[19]).
+Driver 0: output signal InstrD[18] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[18] of instance Latch (InstrD[18]).
+Driver 0: output signal InstrD[17] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[17] of instance Latch (InstrD[17]).
+Driver 0: output signal InstrD[16] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[16] of instance Latch (InstrD[16]).
+Driver 0: output signal InstrD[15] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[15] of instance Latch (InstrD[15]).
+Driver 0: output signal InstrD[14] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[14] of instance Latch (InstrD[14]).
+Driver 0: output signal InstrD[13] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[13] of instance Latch (InstrD[13]).
+Driver 0: output signal InstrD[12] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[12] of instance Latch (InstrD[12]).
+Driver 0: output signal InstrD[11] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[11] of instance Latch (InstrD[11]).
+Driver 0: output signal InstrD[10] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[10] of instance Latch (InstrD[10]).
+Driver 0: output signal InstrD[9] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[9] of instance Latch (InstrD[9]).
+Driver 0: output signal InstrD[8] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[8] of instance Latch (InstrD[8]).
+Driver 0: output signal InstrD[7] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[7] of instance Latch (InstrD[7]).
+Driver 0: output signal InstrD[6] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[6] of instance Latch (InstrD[6]).
+Driver 0: output signal InstrD[5] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[5] of instance Latch (InstrD[5]).
+Driver 0: output signal InstrD[4] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[4] of instance Latch (InstrD[4]).
+Driver 0: output signal InstrD[3] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[3] of instance Latch (InstrD[3]).
+Driver 0: output signal InstrD[2] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[2] of instance Latch (InstrD[2]).
+Driver 0: output signal InstrD[1] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[1] of instance Latch (InstrD[1]).
+Driver 0: output signal InstrD[0] of instance Flip-flop (InstrD).
+Driver 1: output signal InstrD[0] of instance Latch (InstrD[0]).
+Driver 0: output signal PCPlusD[31] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[31] of instance Latch (PCPlusD[31]).
+Driver 0: output signal PCPlusD[30] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[30] of instance Latch (PCPlusD[30]).
+Driver 0: output signal PCPlusD[29] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[29] of instance Latch (PCPlusD[29]).
+Driver 0: output signal PCPlusD[28] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[28] of instance Latch (PCPlusD[28]).
+Driver 0: output signal PCPlusD[27] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[27] of instance Latch (PCPlusD[27]).
+Driver 0: output signal PCPlusD[26] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[26] of instance Latch (PCPlusD[26]).
+Driver 0: output signal PCPlusD[25] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[25] of instance Latch (PCPlusD[25]).
+Driver 0: output signal PCPlusD[24] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[24] of instance Latch (PCPlusD[24]).
+Driver 0: output signal PCPlusD[23] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[23] of instance Latch (PCPlusD[23]).
+Driver 0: output signal PCPlusD[22] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[22] of instance Latch (PCPlusD[22]).
+Driver 0: output signal PCPlusD[21] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[21] of instance Latch (PCPlusD[21]).
+Driver 0: output signal PCPlusD[20] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[20] of instance Latch (PCPlusD[20]).
+Driver 0: output signal PCPlusD[19] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[19] of instance Latch (PCPlusD[19]).
+Driver 0: output signal PCPlusD[18] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[18] of instance Latch (PCPlusD[18]).
+Driver 0: output signal PCPlusD[17] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[17] of instance Latch (PCPlusD[17]).
+Driver 0: output signal PCPlusD[16] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[16] of instance Latch (PCPlusD[16]).
+Driver 0: output signal PCPlusD[15] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[15] of instance Latch (PCPlusD[15]).
+Driver 0: output signal PCPlusD[14] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[14] of instance Latch (PCPlusD[14]).
+Driver 0: output signal PCPlusD[13] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[13] of instance Latch (PCPlusD[13]).
+Driver 0: output signal PCPlusD[12] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[12] of instance Latch (PCPlusD[12]).
+Driver 0: output signal PCPlusD[11] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[11] of instance Latch (PCPlusD[11]).
+Driver 0: output signal PCPlusD[10] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[10] of instance Latch (PCPlusD[10]).
+Driver 0: output signal PCPlusD[9] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[9] of instance Latch (PCPlusD[9]).
+Driver 0: output signal PCPlusD[8] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[8] of instance Latch (PCPlusD[8]).
+Driver 0: output signal PCPlusD[7] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[7] of instance Latch (PCPlusD[7]).
+Driver 0: output signal PCPlusD[6] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[6] of instance Latch (PCPlusD[6]).
+Driver 0: output signal PCPlusD[5] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[5] of instance Latch (PCPlusD[5]).
+Driver 0: output signal PCPlusD[4] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[4] of instance Latch (PCPlusD[4]).
+Driver 0: output signal PCPlusD[3] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[3] of instance Latch (PCPlusD[3]).
+Driver 0: output signal PCPlusD[2] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[2] of instance Latch (PCPlusD[2]).
+Driver 0: output signal PCPlusD[1] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[1] of instance Latch (PCPlusD[1]).
+Driver 0: output signal PCPlusD[0] of instance Flip-flop (PCPlusD).
+Driver 1: output signal PCPlusD[0] of instance Latch (PCPlusD[0]).
+Module clk1 remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "C:\Users\Cavan\Documents\compe475\hw4pipeline\clk1.v" Line 21: Empty module <clk1> remains a black box.
+
+Elaborating module <controlunit>.
+WARNING:HDLCompiler:1127 - "C:\Users\Cavan\Documents\compe475\hw4pipeline\testbench.v" Line 80: Assignment to jump ignored, since the identifier is never used
+
+Elaborating module <registerfile>.
+
+Elaborating module <muxthree_one>.
+
+Elaborating module <muxregdst>.
+
+Elaborating module <shiftleft>.
+ERROR:HDLCompiler:418 - "C:\Users\Cavan\Documents\compe475\hw4pipeline\testbench.v" Line 99: External reference <a1.a> remains unresolved.
+Module testbench remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "C:\Users\Cavan\Documents\compe475\hw4pipeline\testbench.v" Line 21: Empty module <testbench> remains a black box.
+--> 
+
+Total memory usage is 235160 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
